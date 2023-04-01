@@ -1,4 +1,4 @@
-
+/* COACHING SLIDER CODE HERE */
 var swiper = new Swiper(".coaching-swiper", {
     autoplay: {
         delay: 1500,
@@ -27,7 +27,7 @@ var swiper = new Swiper(".coaching-swiper", {
     }
 });
 
-
+/* SPEAKER SLIDER CODE HERE */
 var swiper = new Swiper(".speaker-swiper", {
     autoplay: {
         delay: 1500,
@@ -71,7 +71,7 @@ var swiper = new Swiper(".speaker-swiper", {
 });
 
 
-
+/* TESTIMONIAL SLIDER CODE HERE */
 var swiper = new Swiper(".testimonial", {
     cssMode: true,
     navigation: {

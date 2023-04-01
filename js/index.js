@@ -23,10 +23,7 @@ const x = setInterval(function () {
 }, 1000);
 
 
-
-
-
-
+/* TIMELINE CODE START HERE */
 
 const timelines = document.querySelectorAll(".timeline__right");
 
