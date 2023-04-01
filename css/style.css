@@ -1,0 +1,628 @@
+:root {
+    /* --color-black: black; */
+    --color-white: white;
+    --sticky-top-pos: 30vh;
+    --buffer: 5rem;
+}
+
+
+html,
+body {
+    background-color: #1D1D1D;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*=========================
+REUSABLE COMPONENTS START
+=========================== */
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.common-padding {
+    padding: 150px 0 0 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul>li {
+    margin: 10px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #f8f8f8;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 64px;
+}
+
+P {
+    font-size: 16PX;
+    color: #BFBFBF;
+    line-height: 26px;
+}
+
+span {
+    font-size: 20px;
+    color: #f8f8f8;
+}
+
+/*=========================
+REUSABLE COMPONENTS END
+=========================== */
+
+
+/*======================
+ HEADER CODE START HERE 
+ =======================*/
+.main-container {
+    background: url(../img/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+
+.hero-container {
+    width: 950px;
+    margin: auto
+}
+
+.img-container {
+    position: relative;
+}
+
+.person1 {
+    left: 0;
+    position: absolute;
+    top: 50px;
+
+}
+
+.person2 {
+    right: 0;
+    position: absolute;
+    top: 50px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.hero-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.grow {
+    color: #F0B38C;
+    font-size: 120px;
+}
+
+.coach {
+    color: #AFD7B3;
+    font-size: 120px;
+}
+
+.description>p {
+    font-size: 20px;
+    color: #f8f8f8;
+    margin: 0 0 40px 0;
+}
+
+.btn-container>button {
+    padding: 10px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #222;
+    margin: 0 10px 20px 10px;
+}
+
+.btn-container>button:nth-child(1) {
+    background-color: #AFD7B3;
+}
+
+.rating-container>i {
+    color: yellow;
+}
+
+/*===================== 
+HEADER CODE END HERE
+======================= */
+
+
+
+
+/*============================= 
+COACHING CODE START HERE 
+===============================*/
+.swiper-main-container {
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.swiper-wrapper {
+    cursor: pointer;
+    padding: 30px;
+}
+
+.swiper-slide {
+    color: #f8f8f8;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*============================= 
+COACHING CODE END HERE 
+===============================*/
+
+/*============================= 
+EVENTS CODE START HERE 
+===============================*/
+.event-main-container {
+    padding-top: 110px;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.event-text-container {
+    padding-top: 70px;
+}
+
+.event-text-container>span {
+    margin: 30px 0 30px 0;
+    display: block;
+}
+
+.event-img-container {
+    position: relative;
+}
+
+.countdown-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 0.795);
+    border-radius: 0 0 0 20px;
+}
+
+.event-img-container>img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 20px;
+
+
+}
+
+#countdown-timer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+}
+
+#timer div {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/*============================= 
+EVENTS CODE END HERE 
+===============================*/
+
+/*============================= 
+SPEAKER CODE START HERE 
+===============================*/
+.speaker-text-container {
+    text-align: center;
+}
+
+.speaker-text-container>p {
+    padding: 20px 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.speacker1 {
+    background-color: #B8B9EE;
+}
+
+.speacker2 {
+    background-color: #FFCF96;
+}
+
+.speacker3 {
+    background-color: #70D18C;
+}
+
+.speacker1 {
+    background-color: #B8B9EE;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: rgba(255, 255, 255, 0.37) !important;
+    display: inline-block;
+    font-size: 20px !important;
+    background: rgba(255, 255, 255, 0.644);
+    backdrop-filter: blur(8px);
+    padding: 10px 15px;
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    border: 1px solid #BFBFBF;
+}
+
+.speaker-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+}
+
+/*============================= 
+SPEAKER CODE END HERE 
+===============================*/
+
+/*======================== 
+SHEDULE CODE START HERE 
+==========================*/
+.shedule-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.shedule-text-container>p {
+    margin: 20px 0;
+}
+
+.shedule-btn {
+    border: 1px solid #BFBFBF;
+    color: #f8f8f8;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px 35px;
+    text-transform: uppercase;
+
+}
+
+
+.timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline__section {
+    display: grid;
+    grid-template-columns: auto 5px 50px auto;
+    align-items: start;
+    position: relative;
+}
+
+.timeline__left {
+    font-size: 2.5rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.timeline__left,
+.timeline__middle,
+.timeline__tracker {
+    position: sticky;
+    top: var(--sticky-top-pos);
+    /*   margin-bottom: var(--buffer); */
+}
+
+.timeline__left,
+.timeline__middle {
+    margin-bottom: var(--buffer);
+}
+
+.timeline__right {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(128, 128, 128, 1) 0%,
+            rgba(128, 128, 128, 1) 100%);
+}
+
+.timeline__right>div {
+    background-color: var(--color-black);
+    padding-bottom: var(--buffer);
+    padding-left: 45px;
+    margin-left: 4px;
+}
+
+.timeline__date>div:first-child {
+    font-size: 1.3rem;
+}
+
+.timeline__bullet {
+    --bullet-dims: 20px;
+    background-color: var(--color-white);
+    width: var(--bullet-dims);
+    height: var(--bullet-dims);
+    border-radius: 99999%;
+    transform: translateX(calc(var(--bullet-dims) / 2 + 2px));
+    float: right;
+}
+
+.timeline__content {
+    font-size: 3rem;
+    color: var(--color-grey);
+    transition: color 1s cubic-bezier(0, 0.39, 0.58, 1);
+}
+
+.animate-on-scroll {
+    color: var(--color-white);
+}
+
+/* SHEDULE CODE END HERE */
+
+
+
+
+
+
+/*===============================
+ PRICING TICKETS CODE START HERE
+================================= */
+.pricing-title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.pricing-main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pricing-container {
+    color: #f8f8f8;
+    background-color: #383838;
+    border: 1px solid #BFBFBF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pricing-header {
+    background-color: #1D1D1D;
+    padding: 30px 0;
+    border-bottom: 1px solid #f8f8f8;
+    padding: 30px 35px;
+}
+
+.pricing-header>h3,
+.pricing-header>p {
+    color: #fff;
+}
+
+.pricing-header>h3 {
+    font-size: 36px;
+}
+
+.pricing-header2 {
+    background-color: #F36B7F;
+}
+
+.pricing2 {
+    color: #F36B7F;
+}
+
+.pricing-header3 {
+    background-color: #70D18C;
+}
+
+.pricing3 {
+    color: #70D18C;
+}
+
+.pricing-details {
+    margin: 70px 0;
+    padding: 0 35px;
+}
+
+.common-flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.common-flex>li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 35px;
+    margin: 0 35px 54px 35px;
+    background-color: #1D1D1D;
+    border-radius: 30px;
+    color: #f8f8f8;
+    border: 1px solid #BFBFBF;
+}
+
+.btn2 {
+    background-color: #F36B7F;
+}
+
+.btn3 {
+    background-color: #70D18C;
+}
+
+.btn>button {
+    background: none;
+    border: none;
+    color: #f8f8f8;
+}
+
+
+/*=============================
+ PRICING TICKETS CODE END HERE
+=============================== */
+
+
+/*============================
+TESTIMONIAL CODE START HERE
+============================== */
+.testimonial-main-container {
+    background-color: #383838;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    gap: 30px;
+}
+
+.testimonial-img>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    background-color: #F36B7F;
+}
+
+.testimonial-details {
+    padding-top: 30px;
+}
+
+/*==========================
+ TESTIMONIAL CODE END HERE
+ =========================== */
+
+/* ======================
+FOOTER CODE START HERE
+========================= */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    color: #BFBFBF;
+    padding-bottom: 77px;
+}
+
+.footer-details>span {
+    color: #fff;
+    padding-bottom: 24px;
+    display: inline-block;
+}
+
+.footer-details>form>input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #BFBFBF;
+    background: none;
+    outline: none;
+    color: #f8f8f8;
+}
+
+.subscribe-btn {
+    padding: 15px 35px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #BFBFBF;
+    background: #383838;
+    margin-top: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+}
+
+.social-container>ul>li {
+    display: inline;
+    color: #f8f8f8;
+    margin: 0 10px;
+}
+
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+    color: #f8f8f8;
+}
+
+/*=======================
+FOOTER CODE END HERE
+==========================*/
